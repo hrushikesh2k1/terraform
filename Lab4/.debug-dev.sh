@@ -13,3 +13,5 @@ terraform init \
     -backend-config="key=app1_dev"
 
 terraform $*
+
+rm -rf .terraform
