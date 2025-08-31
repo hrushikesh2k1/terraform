@@ -23,3 +23,7 @@ resource "azurerm_role_assignment" "terraform_user" {
   principal_id = data.azurerm_client_config.current.object_id
 }
 
+# The catch is the architecture is azure key vault is originally intented to work with its own access policy. so, role assignment what we have decalred does not work.
+# To enable azure RBAC we mention enable_rbac_authorization = true inside the block of key vault resource
+
+
