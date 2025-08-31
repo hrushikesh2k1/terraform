@@ -3,6 +3,7 @@
 
 #example
 =================================================================
+# it holds current authentication context data
 data "azurerm_client_config" "current" {
 }
 
